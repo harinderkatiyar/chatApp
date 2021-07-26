@@ -20,7 +20,7 @@
     
     //For routes that 404 error
 	app.get("/error", function(context) {
-		this.partial("myRepair/error-page/error.html");
+		this.partial("src/error-page/error-404-page.html");
 	});
 	app.notFound = function(context) {
 		this.runRoute("get", "/error");

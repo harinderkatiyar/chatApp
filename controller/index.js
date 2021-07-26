@@ -13,4 +13,10 @@
             });
         })
     })
+    app.get('#/home', function (context) {
+        this.partial("src/home/home.html", function () {
+            $.getScriptCached('src/home/home.js', function (data, textStatus, jqxhr) {
+            });
+        })
+    })
 })();
