@@ -19,4 +19,10 @@
             });
         })
     })
+    app.get('#/room', function (context) {
+        this.partial("src/chatBot/myChat.html", function () {
+            $.getScriptCached('src/chatBot/myChatBot.js', function (data, textStatus, jqxhr) {
+            });
+        })
+    })
 })();
