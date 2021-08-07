@@ -1,6 +1,5 @@
 //*
 $(document).ready(function(){
-    $('#myTable').DataTable();
     // code to read selected table row cell data (values).
     $("#myTable").on('click','.btnSelect',function(){
          // get the current row
