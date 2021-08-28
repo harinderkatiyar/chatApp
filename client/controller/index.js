@@ -7,10 +7,12 @@
             });
         })
     })
+
     app.get('#/register', function (context) {
         this.partial("src/signup/signup.html", function () {
             $.getScriptCached('src/signup/signup.js', function (data, textStatus, jqxhr) {
             });
+            
         })
     })
     app.get('#/home', function (context) {
