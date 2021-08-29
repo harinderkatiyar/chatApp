@@ -2,7 +2,8 @@ const express = require("express");
 const app = express();
 const db = require("./models");
 const PORT = process.env.PORT || 3000;
-
+var cors = require('cors')
+app.use(cors())
 app.use(express.urlencoded({extended:true}));
 app.use(express.json());
 //my common routes

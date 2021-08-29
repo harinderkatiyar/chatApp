@@ -3,6 +3,6 @@ var router = express.Router();
 const controller = require("../controller/index");
 
 // Hr/admin 
-router.post('/test', controller.test);
+router.post('/register', controller.register);
 
 module.exports = router;
