@@ -9,16 +9,16 @@
 <div class="main">
    <div class="col-md-6 col-sm-12">
       <div class="login-form">
-         <form>
+         <form onsubmit="return saveLoginData()" id="loginForm">
             <div class="form-group">
                <label>User Name</label>
-               <input type="text" required class="form-control" placeholder="User Name">
+               <input type="text" id="loginUserName" required class="form-control" placeholder="User Name">
             </div>
             <div class="form-group">
                <label>Password</label>
-               <input type="password" class="form-control" placeholder="Password">
+               <input type="password" id="loginPassword" required class="form-control" placeholder="Password">
             </div>
-            <button type="submit" class="btn btn-black"><a href="#/home">Login</a></button>
+            <button type="submit" required class="btn btn-black">Login</button>
             <button type="submit" class="btn btn-secondary"><a href="#/register">Register</a></button>
          </form>
       </div>
