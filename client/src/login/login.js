@@ -17,11 +17,10 @@ SAVE LOGIN DATA AND CHECK SIGNUP DATA
   console.log($.BASE_URL, "hello login");
   console.log("=====testing==", LoginData);
 
-  return false
   $.ajax({
-   url: $.BASE_URL + "api/register",
+   url: $.BASE_URL + "api/login",
    type: 'post',
-   data: JSON.stringify(loginData),
+   data: JSON.stringify(LoginData),
    dataType: "json",
    headers: {
     "Content-Type": "application/json",
