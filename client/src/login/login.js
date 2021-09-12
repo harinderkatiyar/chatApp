@@ -32,18 +32,19 @@ SAVE LOGIN DATA AND CHECK SIGNUP DATA
    cache: false,
    success: function (data, status) {
     console.log("-----", data);
+
     // console.info("check-login", data);
-    // if (data.status == true) {
-    // 	console.warn("Registration has been completed");
-    // 	toastr.success('You have been successfully registered.')
-    // 	loginUserName.value = "";
-    // 	loginPassword.value = "";
-    // 	setTimeout(function () {
-    // 		$('#login').trigger('click');
-    // 	}, 1000);
-    // } else {
-    // 	toastr.error('Something went wrong!', 'Error');
-    // }
+    if (data.status == true) {
+    	console.warn("login has been completed");
+    	toastr.success('You have been login successfully.')
+        	setTimeout(function () {
+                window.location.replace('#/home')
+					}, 1000);
+      
+      
+    } else {
+    	toastr.error('Something went wrong!', 'Error');
+    }
     // return false; // Prevent page refresh
    },
    // 	// error: function (err) {

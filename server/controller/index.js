@@ -36,7 +36,7 @@ async function login(req, res) {
 		const objLogin = { username: req.body.username, password: req.body.password }
 		console.log('=====💫💫💫💨======', { email: objLogin.username });
 
-		savedUser = await model.User.findOne({ where:{ email: objLogin.username} });
+		savedUser = await model.User.findOne({ where:{ email: objLogin.username , password: objLogin.password} });
 
 		console.log('===========', savedUser);
 
